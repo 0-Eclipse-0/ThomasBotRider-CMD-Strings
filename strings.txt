@@ -1,0 +1,219 @@
+$user / $realuser
+Description: Displays the user of the command
+Example: /me steals a cookie from $user | !test
+Response: Bot steals a cookie from AnkhHeart
+$target to $target9 / $realtarget
+Description: Displays the targeted person.
+Example: /me kicks $target in the face! | !kick AnkhHeart
+Response: Bot kicks AnkhHeart in the face!
+$num to $num9
+Description: Expects a valid integer
+Example: /me hugs $target $num2 times! | !hug AnkhHeart 10
+Response: Bot hugs AnkhHeart 10 times!
+$msg
+Description: Displays the text after the command
+Example: $user rolls a $randnum(1,21) for $msg | !msg I wish I had 9 lives!
+Response: Bot: AnkhHeart rolls a 18 for I wish I had 9 lives!
+$randnum(max) or $randnum(min,max)
+Description: Displays a random number in a specified range
+Example: /me rolls a $randnum(1,7)! | !roll
+Response: Bot rolls a 3!
+$currencyname
+Description: Displays currencyname
+Example: In this channel you can collect $currencyname | !currency
+Response: Bot: In this channel you can collect Cookies!
+$count
+Description: Counts amount of times a command has been used
+Example: /me has $count jars of salt. | !count
+Response: Bot has 3 jars of salt. | Bot has 4 jars of salt. | Bot has 5 jars of salt | etc…
+$readline(FileLocation)
+Description: Reads the first line of the document
+Example: $readline(C:\test.txt) | !currentsong
+Response: Bot: Currently playing: Popskyy - Rize Up
+$readrandline(FileLocation)
+Description: Reads a random line from the file
+Example: /me slaps $randuser with a $readrandline(C:\test2.txt)! | !slap
+Response: Bot slaps AnkhHeart with a Tuna! | Bot slaps AnkhHeart with a Brick! | etc..
+$readspecificline(FileLocation,LineNr)
+Description: Reads a specific line from the file (Starts from 0)
+Example: /me slaps $randuser with a $readspecificline(C:\test2.txt,3)! | !slap
+Response: Bot slaps AnkhHeart with a Shovel!
+$toppoints(num)
+Description: Displays top X amount of users based on points (Except Caster & Bots)
+Example: Top 3: $toppoints(3) | !top3
+Response: Bot: Top 3: #1 Promouse (10000), #2 Gamegooru21(9999), #3 EdeMonster (9998)
+$tophours(num)
+Description: Displays top X amount of users based on hours (Except Caster & Bots)
+Example: Top 2: $tophours(2) | !top2
+Response: Bot: Top 2: #1 KrystalRayne (123 Hrs), #2 PixelmonkeyGaming (120 Hrs)
+$uptime
+Description: Displays for how long the stream has been Live
+Example: The stream has been live for: $uptime | !uptime
+Response: Bot: The stream has been live for: 1 hour 25 minutes 58 seconds
+$points
+Description: Displays num of points of the user or target
+Example: $user has $points $currencyname! | !cookies or !cookies AnkhHeart
+Response: Bot: AnkhHeart has 1234 Cookies!
+$raids
+Description: Displays amount of times the user or target has raided the channel.
+Example: $user has raided the channel $raids time(s) so far! | !raids or !raids AnkhHeart
+Response: Bot: AnkhHeart has raided the channel 3 time(s) so far!
+$rank
+Description: Displays the users rank
+Example: $user is Rank: $rank | !rank or !rank AnkhHeart
+Response: Bot: AnkhHeart is Rank: Ninja Kitty
+$hours
+Description: Displays amount of hours the user has been in the stream for
+Example: $user has been in the channel for $hours total. | !Hrs or !Hrs AnkhHeart
+Response: Bot: AnkhHeart has been in the channel for 3.5 Hrs total.
+$pointspos
+Description: Displays the users Position in the ranking based on amount of points
+Example: $user is ranked #$pointspos
+Response: Bot: AnkhHeart is ranked #2
+$hourspos
+Description: Displays the users Position in the ranking based on amount of hours
+Example: $user is ranked #hourspos
+Response: Bot: AnkhHeart is ranked #1
+$nxtrank
+Description: Displays the next rank that the user can achieve
+Example: $user, The next rank that you can achieve is $nxtrank!
+Response: Bot: AnkhHeart, The next rank that you can achieve is Ninja Kitty!
+$nxtrankreq
+Description: Displays the amount of points/hours the user requires for his next rank
+Example: $user, You need $nxtrankreq points to become a $nxtrank!
+Response: Bot: AnkhHeart, You need 13 points to become a Ninja Kitty!
+$myurl
+Description: Displays the twitch channel URL for your stream
+Example: My channel is: $myurl. | !myurl
+Response: Bot: My channel is: http://twitch.tv/AnkhHeart
+$mygame
+Description: Displays the game you are currently playing
+Example: I am playing: $mygame | !currentgame
+Response: Bot: I am playing: Bloodborne
+$mystatus
+Description: Displays your stream title
+Example: Status: $mystatus | !mystatus
+Response: Bot: Status: [720p] Fable: The Lost Chapters [PC]
+$userurl
+Description: Displays the user’s twitch channel URL
+Example: $user’s twitch channel is: $userurl | !userurl
+Response: Bot: AnkhHeart’s twitch channel is: http://twitch.tv/AnkhHeart
+$usergame
+Description: Displays the user’s last played/current game
+Example: $user’s was/is playing: $usergame | !usergame
+Response: Bot: AnkhHeart was/is playing: Bloodborne
+$userstatus
+Description: Displays the user’s stream title
+Example: $user’s Stream title is: $userstatus
+Response: Bot: AnkhHeart’s Stream title is: [720p] Fable: The Lost Chapters [PC]
+$url
+Description: Displays the target’s twitch channel URL
+Example: $target can be found streaming at: $url | !url AnkhHeart
+Response: Bot: AnkhHeart can be found streaming at: http://twitch.tv/AnkhHeart
+$game
+Description: Displays the target’s current/last played game
+Example: $target has last played: $game | !game AnkhHeart
+Response: Bot: AnkhHeart has last played: Bloodborne
+$status
+Description: Displays the target’s stream title
+Example: $target Stream title is: $title | !title AnkhHeart
+Response: Bot: AnkhHeart Stream title is: [720p] Fable: The Lost Chapters [PC]
+$botname
+Description: Displays the bot’s name
+Example: Hello I am $botname | !name
+Response: Bot: Hello I am AnkhBot!
+$randuser
+Description: Displays a random user that has spoken in chat recently
+Example: /me gives $randuser a hug! | !hug
+Response: Bot gives AnkhHeart a hug!
+$randquote
+Description: Displays a random quote
+Example: $randquote | !randquote
+Response: Bot: I am not a cat! – AnkhHeart [Thief] [01/01/2015]
+$randextra
+Description: Displays a random value from the extra quote like system
+Example: $randextra | !randgif
+Response: Bot: http://randomURL.com/gif12.gif
+$quotes
+Description: Displays the amount of quotes
+Example: There are $quotes quotes. | !quotes
+Response: Bot: There are 123 quotes.
+$maxquotes
+Description: Displays the highest number quote
+Example: There are $quotes quotes. Ranging from 0 to $maxquotes. | !quotes
+Response: Bot: There are 123 quotes. Ranging from 0 to 122.
+$commands(NumCommandsPerPage)
+Description: Displays a list of all available commands for the user
+Example: Commands: $commands(3) | !commands or !commands (PageNumber)
+Response: Bot: Commands: !Cookie, !Slap, !Caster [Page 0/2]
+$timers(NumTimersPerPage)
+Description: Displays a list of all available Timers for the user
+Example: Timers: $timers(3) | !timers or !timers (PageNumber)
+Response: Bot: Timers: !ctt, !twitter, !youtube [Page 0/1]
+$sfx(NumCommandsPerPage)
+Description: Displays a list of all available SFX for the user
+Example: SFX: $commands(3) | !commands or !commands (PageNumber)
+Response: Bot: SFX: !scream, !pika, !morph [Page 0/0]
+$time
+Description: Displays the caster’s time
+Example: Currently it is $time over at AnkhHeart’s part of the world.
+Response: Bot: Currently it is 10:20 PM over at AnkhHeart’s part of the world.
+$readapi(URL)
+Description: Displays the text on the URL’s page. Max 255 characters
+Example: $readapi(https://nightdev.com/hosted/followers.php?channel=ankhheart&limit=5)
+Response: Bot: 1. BensGaming808, 2. Gamakuro, 3. GENERAL_XROS, 4. wulleybully, 5.
+NorQuel
+$savetofile ("FileLocation", "Text")
+$savetofile ("FileLocation","Text","SucceedMsg","FailMsg")
+Description: Adds to the end of the file
+Example: $savetofile(”C:\test.txt”,”$msg”,”Succeeded :D”,”Failed! ”) | !save I am a cat
+Response: Bot: Succeeded! ““
+$overwritefile("FileLocation", "Text")
+$overwritefile ("FileLocation","Text","SucceedMsg","FailMsg")
+Description: Overwrites all the data in the .txt file with the added text
+Example: $overwritefile(”C:\test.txt”,”$msg”,”Succeeded :D”,”Failed! ”) | !save I am a cat
+Response: Bot: Succeeded!
+$countdown(12:00 AM) or $countdown(04/05/2015 12:00 AM)
+Description: Allows you to start a countdown from the current time to the set time/date
+Example: $countdown(04/05/2015 12:00 AM) | !sleep
+Response: Bot: 1 day 2 hours 48 minutes 36 seconds
+$dummy
+Description: This is a Dummy that will not post the message if there is nothing behind the
+command
+Example: $dummy $readrandline(C:\Users\Ankh\Blah.txt) | !8ball Am I green?
+Response: Bot: Perhaps?!
+$dummyormsg
+Description: This will get replaced by anything behind the command. If there is nothing it be
+cleared from the response message.
+Example: http://api.com/$dummyormsg | !test Cats or !test
+Response: Bot: http://api.com/Cats or http://api.com
+$addpoints("target","min","max","succeed","fail")
+Description: Adds points to a certain user and sends a message upon succeeding / failing
+Example: $addpoints("ankhheart","10","50","ankhheart Got $value points","Failed to give
+points!") | !addpoints
+Response: Bot: ankhheart Got 35 points
+$removepoints("target","min","max","succeed","fail","forceremove")
+Description: Removes points from a certain user and sends a message upon succeeding/failing.
+Force remove(true/false) removes points even if the user doesn’t have enough.
+Example: $removepoints("ankhheart","10","100","Removed $value points from
+ankhheart.","Unable To remove $value points from ankhheart!","false")
+|!removepoints
+Response: Bot: Removed 85 points from ankhheart.
+$givepoints("from","to","num","succeed","fail","forcegive")
+Description: Overwrites all the data in the .txt file with the added text
+Example: $givepoints("$user","$target","50","$user gave $value points to $target","$user
+didn't have enough points to give to $target!","false")| !give gamegooru21
+Response: Bot: AnkhHeart gave 50 gamegooru21
+$currentsong and $requestedby
+Description: Return the current song that is being played through songrequest
+Example: Current Song: $currentsong – Requested By $requestedby| !currentsong
+Response: Bot: Current song: ONE MORE FIGHT – Requested By AnkhHeart
+$nextsong and $nextrequestedby
+Description: Return the current song that is next in queue
+Example: Next Song: $nextsong – Requested By $nextrequestedby| !nextsong
+Response: Bot: Next song: ONE MORE FIGHT – Requested By AnkhHeart
+$setgame(game) and $settitle(title)
+Description: Allows you to set the game & title through a command and create presets for
+certain games
+Example: $setgame(Dungeon Defenders II) $settitle(MMO Mornings)| !dd2
+Response: No response as the bot will simply update the stream & title
